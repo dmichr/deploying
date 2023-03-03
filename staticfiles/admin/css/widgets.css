@@ -248,7 +248,7 @@ a.active.selector-clearall:focus, a.active.selector-clearall:hover {
 }
 
 .selector .search-label-icon {
-    background: url(../img/search.svg) 0 0 no-repeat;
+    background: url(../img/.svg) 0 0 no-repeat;
     display: inline-block;
     height: 18px;
     width: 18px;

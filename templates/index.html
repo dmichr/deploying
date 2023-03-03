@@ -61,7 +61,7 @@
                                     <input type="text" class="form-control" placeholder="Buscar...   " name="buscar" value = "{{request.GET.buscar}}">
                                     <span class="input-group-list"></span>
                                     <i class="icon icon-search"></i>
-                                    <button type="submit" class="buton btn-success">Buscar</button>
+                                    <button type="submit" class="buton btn-success" >Buscar</button>
                                 </div>
                             </div>
                         </form>
@@ -109,7 +109,7 @@
                 <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 float-left">
                     {%if posts.has_previous %}
                         <div class="clearfix">
-                            <a href="?page={{ posts.previos_page_number }} {% if request.GET.search %} &q={{ request.GET.search }} {% endif %}" class="btn btn-primary float-left">Anterior</a>
+                            <a href="?page={{ posts.previos_page_number }} {% if request.GET.search %}&q={{ request.GET.search }} {% endif %}" class="btn btn-primary float-center">Anterior</a>
                         </div>
                     {% endif%}
                 </div>
@@ -120,7 +120,7 @@
                 <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 float-left">
                     {%if posts.has_next %}
                         <div class="clearfix">
-                            <a href="?page={{ posts.next_page_number }}{% if request.GET.search %} &q={{ request.GET.search }} {% endif %}" class="btn btn-primary float-right">Siguiente</a>
+                            <a href="?page={{ posts.next_page_number }}{% if request.GET.search %}&q={{ request.GET.search }} {% endif %}" class="btn btn-primary float-right">Siguiente</a>
                         </div>
                     {% endif%}
                 </div>
